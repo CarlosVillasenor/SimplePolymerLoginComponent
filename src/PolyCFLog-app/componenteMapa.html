@@ -1,0 +1,66 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="dale.html">
+
+<!-- <link rel="import" href="highlight-behavior.html"> -->
+
+
+<dom-module id="forma-button3">
+<template>
+  <style>
+  * {
+    margin: 0px;
+  }
+
+  :host {
+    display: block;
+    text-align: center;
+    height: 1000px;
+  }
+    #map { height: 100%; width: 100%;}
+
+  </style>
+
+    <head>
+
+    </head>
+    <body>
+      <div id="map"></div>
+      <script type="text/javascript">
+
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
+  }
+
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6ZOs7WU51xnT3e_9oFupU6CXAMuXhTn0&region=mx&language=es&callback=initMap">
+      </script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</template>
+  <script>
+  Polymer({
+
+    is:'forma-button3',
+
+
+  });
+  </script>
+
+
+</dom-module>

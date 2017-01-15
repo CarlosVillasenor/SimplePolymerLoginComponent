@@ -1,0 +1,7 @@
+{
+  "name": "PolyCFLog",
+  "short_name": "PolyCFLog",
+  "description": "A log-menu for a user",
+  "start_url": "/",
+  "display": "standalone"
+}
